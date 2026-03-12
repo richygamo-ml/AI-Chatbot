@@ -9,6 +9,8 @@ from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 
 load_dotenv()
+if not os.getenv("OPENAI_API_KEY"):
+    raise ValueError("OPENAI_API_KEY is not set. Check your .env file or terminal environment.")
 
 # ---------------- PAGE CONFIG ----------------
 
