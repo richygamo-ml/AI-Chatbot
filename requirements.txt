@@ -1,9 +1,10 @@
 streamlit
 openai
-langchain
-langchain-openai
-langchain-community
+langchain==0.3.26
+langchain-openai==0.3.28
+langchain-community==0.3.27
 python-dotenv
 PyPDF2
-chromadb
+chromadb==0.5.23
+protobuf==3.20.3
 pandas
